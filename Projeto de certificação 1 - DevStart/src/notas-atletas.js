@@ -22,7 +22,7 @@ function compare(a,b) {return a - b;};
 for (let i = 0; i < atletas.length; i++) {
   let soma = 0;
   atletas[i].notasComputadas = atletas[i].notas;
-  atletas[i].notasComputadas = atletas[i].notasComputadas.sort(compare).slice(1,4);
+  atletas[i].notasComputadas = atletas[i].notasComputadas.sort().slice(1,4);
   atletas[i].notasComputadas.map(function(notas) {
     soma = soma + notas;
   });
